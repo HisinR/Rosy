@@ -25,6 +25,11 @@ public class FileUploadController {
 	
 	@RequestMapping(value="/pic/upload",produces=MediaType.TEXT_PLAIN_VALUE+";charset=utf-8")
 	@ResponseBody
+	/**
+	 * 图片上传
+	 * @param uploadFile
+	 * @return
+	 */
 	public  String  uploadFile(MultipartFile uploadFile){	
 		try {
 			//获取文件名称：getOriginalFilename();

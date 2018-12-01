@@ -23,7 +23,7 @@ public class ContentCategoryServiceImpl implements ContentCategoryService{
 	@Autowired
 	private TbContentCategoryMapper contentCateMapper;
 	
-	@Autowired
+	@Autowired 
 	private JedisClient jedisClient;
 	
 	@Value("${redis.category}")
